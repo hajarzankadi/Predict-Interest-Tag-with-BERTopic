@@ -8,7 +8,7 @@ Before starting, I will highlight some important details:
 
 1. BERTopic:
 
-BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions as highlighted in here.
+BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions as highlighted in here (https://maartengr.github.io/BERTopic/index.html).
 
 The algorithm is based on 3 stages:
 
@@ -16,7 +16,7 @@ The algorithm is based on 3 stages:
     - Clustering documents which uses: UMAP as a dimentionality reduction of embeddings and HDBSCAN to cluster reduced embeddings and create clusters of semantically similar documents
     - Creating topic representation by : Extracting and reducing topics with c-TF-IDF and improving coherence and diversity of words with Maximal Marginal Relevance
 
- for more details, I advice you to check out this link.
+ for more details, I advice you to check out this link (https://maartengr.github.io/BERTopic/algorithm/algorithm.html).
 
 2. BERTopic installation:
 
@@ -28,15 +28,15 @@ The package is installed via pypi:
 
 BERTweet is the first public large-scale language model pre-trained for English Tweets. BERTweet is trained based on the RoBERTa (A Robustly Optimized BERT Pretraining Approach) pre-training procedure.
 
-for more details, please check out those two references: BERTweet and Roberta.
+for more details, please check out those two references: BERTweet(https://github.com/VinAIResearch/BERTweet#introduction) and Roberta(https://github.com/pytorch/fairseq/blob/main/examples/roberta/README.md).
 
 4. dataset:
 
-For this tutorial, I used this Kaggle dataset, which contains data analysis tweets from verified accounts on Twitter from 2010-2021.
+For this tutorial, I used this Kaggle dataset(https://www.kaggle.com/datasets/ruchi798/data-science-tweets), which contains data analysis tweets from verified accounts on Twitter from 2010-2021.
 
 5. Tweet preprocessing:
 
-In order to preprocess our tweets, I use “tweet preprocessor” package, a preprocessing library for tweet data written in Python and that can be installed via :
+In order to preprocess our tweets, I use “tweet preprocessor” package (https://github.com/s/preprocessor), a preprocessing library for tweet data written in Python and that can be installed via :
 
 — using Pip:
 
